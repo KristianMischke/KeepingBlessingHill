@@ -1,0 +1,61 @@
+
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background: url("/media/images/Greenhouse.JPG") no-repeat center;
+    background-size: 100vmax 100vmax;
+    background-attachment: fixed;
+    filter:blur(10px);
+    z-index: -10;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 100%;
+    /* background-color: var(--bg-color); */
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+
+
+
+/* small screens */
+@media(min-width: 800px) {
+    
+    main {
+        padding: 3% 10%;
+    }
+
+}
+
+/* large screens */
+@media(min-width:1400px) { 
+
+    main {
+        padding: 3% 20%;
+    }
+
+}

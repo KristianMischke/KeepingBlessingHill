@@ -1,0 +1,169 @@
+
+/* NAVIGATION BAR */
+
+header {
+    height: 59px;
+}
+
+nav {
+    background-size: 100vmax;
+
+    position: fixed;
+    top:0;
+    width: 100%;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+
+    z-index: 1;
+}
+
+.burger-nav {
+    display: block;
+    float: right;
+    height: 2.5rem;
+    width: 100%;
+    padding: 2rem;
+    position: fixed;
+
+    box-sizing: border-box;
+
+    background: url("/media/images/th-menu.svg") no-repeat 98% center;
+    background-size: 2.5rem;
+
+    cursor: pointer;
+}
+
+nav ul.nav-bar {
+    background-color: white;
+
+    width: 100%;
+    height: 0;
+
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+nav ul.nav-bar.open {
+    height: auto;
+}
+
+li.nav-item {
+    float: none;
+    width: 100%;
+}
+
+li.nav-item > a {
+
+    display: block;
+    padding: 20px 24px;
+
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+li.nav-item > a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+li.nav-item > a {
+    color: var(--primary-color);
+}
+
+li.nav-item.active > a {
+    color: var(--accent-color);
+}
+
+.brand {
+    background-color: white;
+
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+.brand a {
+    display: block;
+    color: var(--primary-color);
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.brand > h1 {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    font-size: 24px;
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+@media(min-width:900px) {
+
+    nav {
+        position: static;
+
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    header {
+        height: 0.5rem;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+
+    nav ul.nav-bar {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0 5% 0 0;
+    }
+
+    li.nav-item {
+        width: auto;
+        float: left;
+    }
+
+    .brand {
+        width: auto;
+        height: 61px;
+        padding: 0 0 0 5%;
+        float: left;
+    }
+
+}
+
+@media(min-width:1400px) {
+
+    nav {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+}
