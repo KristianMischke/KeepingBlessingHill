@@ -5,15 +5,17 @@ body {
     padding: 0;
 }
 
-.background {
+#background {
     position: fixed;
     width: 100%;
     height: 100%;
 
+    top: 0;
+
     background: url("/media/images/Greenhouse.JPG") no-repeat center;
     background-size: 100vmax 100vmax;
     background-attachment: fixed;
-    filter:blur(10px);
+    /* filter:blur(15px); */
     z-index: -10;
 }
 
@@ -37,7 +39,7 @@ main {
     padding: 1rem 2rem;
 }
 
-.content.sidebar {
+#sidebar.content {
     padding: 0.5rem;
 }
 
@@ -55,6 +57,21 @@ main {
 .archive h3 {
     font-size: 1.25rem;
     margin: 0.5rem;
+}
+
+
+
+/* ABOUT PAGE STYLING */
+
+.about img {
+    float: left;
+
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    margin-right: 1rem;
 }
 
 

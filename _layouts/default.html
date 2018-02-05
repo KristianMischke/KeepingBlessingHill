@@ -13,7 +13,7 @@
     <title>{{ site.title }}</title>
 </head>
 <body>
-    <div class="background"></div>
+    <div id="background"></div>
 
     <nav>
         {% include navigation.html %}
@@ -23,16 +23,16 @@
 
     </header>
 
-    <main {% if page.title == "home" %}class="home"{% endif %}>
+    <main {% if page.title == "home" or page.title == "about" %}class="{{ page.title }}"{% endif %}>
         
-        <div class="content">
+        <div class="content" id="content">
             {{ content }}
         </div>
 
-        <div class="sidebar content">
+        <div class="content" id="sidebar">
 
             <div class="books">
-                
+
             </div>
 
             <div class="archive">

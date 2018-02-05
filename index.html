@@ -5,4 +5,12 @@
 layout: home
 title: "home"
 ---
-<p>Testing</p>
+<h1>Latest Post</h1>
+{% for post in site.posts limit:1 %}
+    <h2>{{ post.title }}</h2>
+    <div>{{ post.content }}</div>
+{% endfor %}
+{% for post in site.posts limit:2 offset:1 %}
+    <h2>{{ post.title }}</h2>
+    <div>{{ post.content | strip_html | truncatewords:50 }}</div>
+{% endfor %}
