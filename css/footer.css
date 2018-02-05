@@ -31,15 +31,15 @@ footer a img {
 @media(min-width:900px) {
 
     footer {
-        margin: 0.5rem 10vw;
+        margin: 0.5rem 10%;
     }
 
 }
 
-@media(min-width:1400px) {
+@media(min-width:1600px) {
 
     footer {
-        margin: 0 20vw;
+        margin: 0 15%;
     }
 
 }
