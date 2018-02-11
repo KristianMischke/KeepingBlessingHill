@@ -2,4 +2,28 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-{{ content }}
+<div>{{ content }}</div>
+
+<div class="comments">
+    {% assign comments = site.data.comments[page.slug] | sort %}
+    {% for comment in comments %}
+        {% assign avatar = comment[1].avatar %}
+        {% assign email = comment[1].email %}
+        {% assign name = comment[1].name %}
+        {% assign url = comment[1].url %}
+        {% assign date = comment[1].date %}
+        {% assign message = comment[1].message %}
+        {% include comment.html index=forloop.index avatar=avatar email=email name=name url=url date=date message=message %}
+    {% endfor %}
+</div>
+
+<form class="comment-form" method="POST" action="https://api.staticman.net/v2/entry/KristianMischke/KeepingBlessingHill/master/comments">
+    <input name="options[redirect]" type="hidden" value="{{ page.url }}">
+    <!-- e.g. "2016-01-02-this-is-a-post" -->
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <label>Add Comment</label><textarea name="fields[message]"></textarea>
+    <input name="fields[name]" type="text" placeholder="Name">
+    <input name="fields[email]" type="email" placeholder="E-mail">
+    
+    <button type="submit">Post Comment</button>
+</form>

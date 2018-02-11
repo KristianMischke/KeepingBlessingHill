@@ -48,6 +48,62 @@ main {
     border-bottom: none;
 }
 
+/* COMMENT FORM STYLING */
+.comment-form {
+    display: block;
+    flex-wrap: wrap;
+
+    font-family: var(--gui-font);
+}
+
+.comment-form label {
+    display: inline-block;
+    padding: 0 2rem 0 0;
+
+    text-align: center;
+}
+
+.comment-form input, .comment-form textarea {
+    display: inline-block;
+    width: 44%;
+    padding: 0.5rem;
+
+    box-sizing: border-box;
+
+    background: white;
+    border: 3px solid var(--highlight-color);
+    border-radius: 0.5rem;
+
+    font-family: var(--gui-font);
+}
+
+.comment-form textarea {
+    height: 20vh;
+    width: 100%;
+
+    margin: 0;
+}
+
+.comment-form button {
+    width: 50%;
+    height: 2.5rem;
+
+    margin: 0.5rem 25%;
+
+    background: var(--accent-color);
+    border: 3px solid purple;
+    border-radius: 3px;
+
+    font-family: var(--gui-font);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.comment-form button:hover {
+    filter: brightness(150%);
+}
+
 
 /* ARCHIVE STYLING */
 .archive {
