@@ -8,11 +8,13 @@ header {
 nav {
     background-size: 100vmax;
 
+    border-bottom: 2px solid var(--primary-color);
+
     position: fixed;
     top:0;
     width: 100%;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    font-family: var(--gui-font);
     font-size: 18px;
 
     z-index: 1;
@@ -141,7 +143,9 @@ li.nav-item.active > a {
     }
 
     nav ul.nav-bar {
-        display: block;
+        display: flex;
+        justify-content: center;
+
         width: auto;
         height: auto;
         margin: 0;
@@ -149,15 +153,18 @@ li.nav-item.active > a {
     }
 
     li.nav-item {
-        width: auto;
-        float: left;
+        width: 25%;
     }
 
     .brand {
-        width: auto;
-        height: 61px;
-        padding: 0 0 0 5%;
-        float: left;
+        width: 100%;
+        height: 300px;
+        padding: 100px 0 0 0;
+        box-sizing: border-box;
+    }
+
+    .brand > h1 {
+        font-size: 3rem;
     }
 
 }

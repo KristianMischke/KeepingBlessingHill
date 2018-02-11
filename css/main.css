@@ -5,33 +5,21 @@ body {
     padding: 0;
 }
 
-#background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-
-    background: url("/media/images/Greenhouse.JPG") no-repeat center;
-    background-size: 100vmax 100vmax;
-    background-attachment: fixed;
-    /* filter:blur(15px); */
-    z-index: -10;
-}
-
 /* MAIN CONTENT */
 
 main {
+    display: block;
     width: 100%;
     margin: 0;
 
     box-sizing: border-box;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--primary-font);
     font-size: 20px;
 }
 
 .content {
+    display: block;
     width: auto;
     height: auto;
     background-color: white;
@@ -39,14 +27,35 @@ main {
     padding: 1rem 2rem;
 }
 
+.content a {
+
+    color: var(--link-color);
+    text-decoration: none;
+
+}
+
 #sidebar.content {
     padding: 0.5rem;
+}
+
+/* POST STYLING */
+.post {
+    padding: 10px 0 30px 0;
+    border-bottom: 2px solid var(--highlight-color);
+}
+
+.post:last-child {
+    border-bottom: none;
 }
 
 
 /* ARCHIVE STYLING */
 .archive {
     font-size: 1rem;
+
+    padding: 0 1rem;
+
+    border-top: 2px solid var(--highlight-color);
 }
 
 .archive h2 {
@@ -84,6 +93,10 @@ main {
 
     .content {
         margin: 3% 0;
+    }
+
+    .archive {
+        border-top: none;
     }
 
 }

@@ -13,7 +13,6 @@
     <title>{{ site.title }}</title>
 </head>
 <body>
-    <div id="background"></div>
 
     <nav>
         {% include navigation.html %}
@@ -35,15 +34,17 @@
 
             </div>
 
+            {{ if page.showArchive == "true" }}
             <div class="archive">
                 {% include archive.html %}
             </div>
+            {{ endif }}
         
         </div>
 
     </main>
 
-    
+    <div id="spacer"></div>    
 
     <footer>
         {% include footer.html %}

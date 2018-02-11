@@ -1,7 +1,7 @@
 
 const header = document.querySelector('header');
-const mainContent   = document.querySelector('main #content');
-const sidebar = document.querySelector('main #sidebar');
+const mainSpacer   = document.querySelector('#spacer');
+const mainContent = document.querySelector('main');
 const footer = document.querySelector('footer');
 
 var fitContent;
@@ -11,10 +11,10 @@ window.onload = fitMainContent;
 
 function fitMainContent() {
 
-    fitContent = window.innerHeight - header.clientHeight - sidebar.clientHeight - footer.clientHeight;
+    fitContent = window.innerHeight - header.clientHeight - mainContent.clientHeight - footer.clientHeight;
 
-    if(mainContent.clientHeight < fitContent) {
-        mainContent.style.height = fitContent + "px";
+    if(fitContent > 0) {
+        mainSpacer.style.height = fitContent + "px";
     }
 
 }
