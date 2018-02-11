@@ -5,7 +5,7 @@ layout: default
 <div>{{ content }}</div>
 
 <div class="comments">
-    {% assign comments = site.data.comments[page.slug] | sort %}
+    {% assign comments = site.data.comments | sort %}
     {% for comment in comments %}
         {% assign avatar = comment[1].avatar %}
         {% assign email = comment[1].email %}
