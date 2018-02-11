@@ -2,7 +2,7 @@
 /* NAVIGATION BAR */
 
 header {
-    height: 59px;
+    height: 70px;
 }
 
 nav {
@@ -132,10 +132,6 @@ li.nav-item.active > a {
 
         width: 80%;
         margin: 1% 10% 0;
-    }
-
-    header {
-        height: 0.5rem;
     }
 
     .burger-nav {
