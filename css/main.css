@@ -48,7 +48,7 @@ main {
     border-bottom: none;
 }
 
-.post-title, .post-title > a {
+.post-title, .post-title > a, .post-title > a:visited {
     color: var(--brand-primary);
 }
 
