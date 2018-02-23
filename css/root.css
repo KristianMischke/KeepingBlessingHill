@@ -1,11 +1,13 @@
 :root {
     --bg-color: hsl(206, 58%, 95%);
-    --primary-color: #66A1D5;
-    --accent-color: #9B3A93;
 
+    --primary-color: #66A1D5;
     --highlight-color: #B7D5EC;
-    --color1: #D7CBDE;
-    --color2: #517A3B;
+
+    --accent-color: #bc4198;
+
+    --brand-primary: #832890;
+
     --link-color: #3cb6ac;
 
     --post-font: Georgia, 'Times New Roman', Times, serif;

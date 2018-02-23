@@ -48,6 +48,14 @@ main {
     border-bottom: none;
 }
 
+.post-title, .post-title > a, .post-title > a:visited {
+    color: var(--brand-primary);
+}
+
+.post-title > a:hover {
+    color: var(--accent-color);
+}
+
 /* COMMENT FORM STYLING */
 .comment-form {
     display: block;
@@ -90,8 +98,8 @@ main {
 
     margin: 0.5rem 0;
 
-    background: var(--accent-color);
-    border: 3px solid purple;
+    background: var(--brand-primary);
+    border: 3px solid #5d0e75;
     border-radius: 3px;
 
     font-family: var(--gui-font);
