@@ -1,12 +1,11 @@
 :root {
-    --bg-color: hsl(206, 58%, 95%);
+    --bg-color: hsl(201, 18%, 85%);
 
-    --primary-color: #66A1D5;
-    --highlight-color: #B7D5EC;
+    --accent-color: #692254;
+    --brand-primary: #9969a0;
 
-    --accent-color: #bc4198;
-
-    --brand-primary: #832890;
+    --primary-color: var(--brand-primary);/* #66A1D5;*/
+    --highlight-color: #d4b9d8;
 
     --link-color: #3cb6ac;
 

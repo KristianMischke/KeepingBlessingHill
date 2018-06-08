@@ -1,26 +1,61 @@
 
 /* FOOTER */
 
-footer .legal{
-    display: block;
+
+.other > div img {
+    float: left;
+
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    margin-right: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
 
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 1rem 2rem;
 
     box-sizing: border-box;
 
 
-    background-color: white;
-    color: black;
+    background-color: #222222;
+
 
     border-top: 2px solid var(--primary-color);
+
+    z-index: 1;
+}
+
+.other {
+    padding: 2rem;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.other > div {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.legal {
+    display: block;
+
+    background-color: #171717;
+    padding: 0 0 0.5rem 0;
 
     font-family: var(--gui-font);
     text-align: center;
 
-    z-index: 1;
+    color: white;
 }
 
 .github {
@@ -31,7 +66,7 @@ footer .legal{
 }
 
 
-
+/* 
 @media(min-width:900px) {
 
     footer {
@@ -46,4 +81,4 @@ footer .legal{
         margin: 0 15%;
     }
 
-}
+} */

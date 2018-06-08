@@ -22,41 +22,46 @@
 </head>
 <body>
 
-    <nav>
-        {% include navigation.html %}
-    </nav>
-    
-    <header>
-
-    </header>
-
-    <main {% if page.title == "home" or page.title == "about" %}class="{{ page.title }}"{% endif %}>
+    <div class="whole-page">
+        <nav>
+            {% include navigation.html %}
+        </nav>
         
-        <div class="content" id="content">
-            {{ content }}
-        </div>
+        <header>
 
-        <div class="content" id="sidebar">
+        </header>
 
-            <div class="books">
-
+        <main {% if page.title == "home" or page.title == "about" %}class="{{ page.title }}"{% endif %}>
+            
+            <div class="content" id="content">
+                {{ content }}
             </div>
 
-            {% if page.showArchive != "false" %}
-            <div class="archive">
-                {% include archive.html %}
+            {% if page.showSidebar != "false" %}
+            <div class="content" id="sidebar">
+
+                <div class="books">
+                {% assign books = site.data.books %}
+                {% for book in books %}
+                    {% include book-card.html %}
+                {% endfor %}
+                </div>
+
+                <div class="archive">
+                    {% include archive.html %}
+                </div>
+            
             </div>
             {% endif %}
-        
-        </div>
 
-    </main>
+        </main>
 
-    <div id="spacer"></div>    
+        <div id="spacer"></div>    
 
-    <footer>
-        {% include footer.html %}
-    </footer>
+        <footer>
+            {% include footer.html %}
+        </footer>
+    </div>
 
 
     <script src="/js/menu.js"></script>

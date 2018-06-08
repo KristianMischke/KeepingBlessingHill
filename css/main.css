@@ -3,6 +3,13 @@
 body {
     margin:0;
     padding: 0;
+    background: var(--bg-color) url("/media/images/floralTexture.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.whole-page {
+    background-color: white;
+    margin: 1% 5%;
 }
 
 /* MAIN CONTENT */
@@ -27,7 +34,7 @@ main {
     padding: 1rem 2rem;
 }
 
-.content a {
+a {
 
     color: var(--link-color);
     text-decoration: none;
@@ -35,7 +42,16 @@ main {
 }
 
 #sidebar.content {
+    margin: 0;
     padding: 0.5rem;
+}
+
+h3 > a {
+    color: var(--brand-primary);
+}
+
+h3 > a:hover {
+    color: var(--accent-color);
 }
 
 /* POST STYLING */
@@ -157,8 +173,6 @@ main {
 .archive {
     font-size: 1rem;
 
-    padding: 0 1rem;
-
     border-top: 2px solid var(--highlight-color);
 }
 
@@ -191,12 +205,12 @@ main {
 /* small screens */
 @media(min-width:900px) {
     
-    main {
-        padding: 0 10%;
+    .whole-page {
+        margin: 1% 10%;
     }
 
     .content {
-        margin: 3% 0;
+        /* margin: 3% 0; */
     }
 
     .archive {
@@ -208,8 +222,12 @@ main {
 /* ADD GRID at 1200px */
 @media(min-width:1200px) {
 
+    .whole-page {
+        margin: 1% 10%;
+    }
+
     main {
-        padding: 1% 10%;
+        /* padding: 1% 10%; */
 
         display: grid;
         grid-template-columns: 79% 19%;
@@ -217,7 +235,7 @@ main {
     }
 
     .content {
-        margin: 0;
+        /* margin: 0; */
     }
 
 }
@@ -225,8 +243,8 @@ main {
 /* large screens */
 @media(min-width:1600px) { 
 
-    main {
-        padding: 1% 15%;
+    .whole-page {
+        margin: 1% 20%;
     }
 
 }
