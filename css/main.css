@@ -5,6 +5,8 @@ body {
     padding: 0;
     background: var(--bg-color) url("/media/images/floralTexture.jpg") no-repeat center fixed;
     background-size: cover;
+
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 
 .whole-page {
