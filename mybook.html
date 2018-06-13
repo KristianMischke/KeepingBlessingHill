@@ -1,0 +1,11 @@
+---
+layout: page
+title: "mybook"
+
+showSidebar: "false"
+---
+<div class="mybook">
+{% for book in site.data.books limit:1 %}
+    {% include book-detail.html %}
+{% endfor %}
+</div>

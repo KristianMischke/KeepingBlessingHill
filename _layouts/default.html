@@ -33,7 +33,7 @@
 
         <main {% if page.title == "home" or page.title == "about" %}class="{{ page.title }}"{% endif %}>
             
-            <div class="content" id="content">
+            <div class="content" id="content" {% if page.showSidebar == "false" %}style="grid-column-end: span 2;"{% endif %}>
                 {{ content }}
             </div>
 
