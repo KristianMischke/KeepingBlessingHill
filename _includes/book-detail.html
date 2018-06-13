@@ -4,7 +4,7 @@
         <img src="{{ book[1].cover }}" alt="Book Cover" width="40%" style="float:left; margin: 0 1rem 1rem;">
         <p>{{ book[1].description }}</p>
     </div>
-    <p style="clear:left;">available through your favorite bookstore or online at...</p>
+    <p style="clear:left;">Available through your favorite bookstore or online at...</p>
     <div class="links">
     {% for link in book[1].links %}
         <a href="{{ link.url }}"><img src="{{ link.img }}" alt="{{ link.title }}" width="100px"></a>
