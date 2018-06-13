@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1 class="post-title">{{ page.title }}</h1>
-<div>{{ content }}</div>
+<div class="post-content">{{ page.content }}</div>
 
 <div class="comments">
     {% assign comments = site.data.comments[page.slug] %}
