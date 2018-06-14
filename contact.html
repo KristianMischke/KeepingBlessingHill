@@ -1,5 +1,20 @@
 ---
 layout: page
 title: "contact"
+
+scripts: |
+    <script>
+        window.onload = () => {
+            document.querySelector(".contact-form #subject").value = getParameterByName("subject");
+            document.querySelector(".contact-form #message").value = getParameterByName("message");
+        }
+    </script>
 ---
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident culpa at iure. Fugit ex aliquam eum vitae non cupiditate cum, molestias sed rerum, provident doloremque quibusdam asperiores modi quaerat et est numquam qui nostrum veritatis quidem quo. Id repellat voluptates asperiores voluptatibus autem molestias deserunt voluptatem, similique ex dignissimos quos ipsam in dicta ipsa fuga omnis ea cupiditate, consequatur eaque voluptatum? Tenetur magni harum, libero eveniet dolorem expedita odit. Ipsa ab iusto non saepe et cumque veniam odio fugiat, nisi quasi maiores voluptatum voluptate totam velit nihil facilis perspiciatis voluptatem repellendus unde! Amet ipsam accusamus officia beatae consectetur doloremque.</p>
+<form class="contact-form" method="POST" action="https://formspree.io/kristianmischke@gmail.com">
+    <label>Contact Joyce Sackett</label>
+    <br/>
+    <input id="subject" name="_subject" type="text" placeholder="Subject">
+    <input id="email" name="_email" type="email" placeholder="Your E-mail">
+    <textarea id="message" name="_message" placeholder="Insert message here"></textarea>
+    <button type="submit">Send</button>
+</form>

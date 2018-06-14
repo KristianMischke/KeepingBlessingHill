@@ -4,9 +4,10 @@ layout: default
 <h1 class="post-title">{{ page.title }}</h1>
 <div class="post-content">{{ page.content }}</div>
 
+{% assign comments = site.data.comments[page.slug] %}
+{% if comments %}  
 <div class="comments">
-    {% assign comments = site.data.comments[page.slug] %}
-    {% if comments %}
+    <h3>Comments</h3>
     {% assign comments = comments | sort %}
     {% for comment in comments %}
         {% assign avatar = comment[1].avatar %}
@@ -17,8 +18,8 @@ layout: default
         {% assign message = comment[1].message %}
         {% include comment.html index=forloop.index avatar=avatar email=email name=name url=url date=date message=message %}
     {% endfor %}
-    {% endif %}
 </div>
+{% endif %}
 
 <form class="comment-form" method="POST" action="https://api.staticman.net/v2/entry/KristianMischke/KeepingBlessingHill/master/comments">
     <input name="options[redirect]" type="hidden" value="{{ page.url }}">

@@ -75,21 +75,21 @@ h3 > a:hover {
 }
 
 /* COMMENT FORM STYLING */
-.comment-form {
+.comment-form, .contact-form {
     display: block;
     flex-wrap: wrap;
 
     font-family: var(--gui-font);
 }
 
-.comment-form label {
+.comment-form label, .contact-form label {
     display: inline-block;
     padding: 0 2rem 0 0;
 
     text-align: center;
 }
 
-.comment-form input, .comment-form textarea {
+.comment-form input, .comment-form textarea, .contact-form input, .contact-form textarea {
     display: inline-block;
     width: 44%;
     padding: 0.5rem;
@@ -103,14 +103,14 @@ h3 > a:hover {
     font-family: var(--gui-font);
 }
 
-.comment-form textarea {
+.comment-form textarea, .contact-form textarea {
     height: 20vh;
     width: 100%;
 
     margin: 0;
 }
 
-.comment-form button {
+.comment-form button, .contact-form button, .links a.button {
     width: 44%;
     height: 2.5rem;
 
@@ -124,10 +124,15 @@ h3 > a:hover {
     font-weight: bold;
     text-align: center;
     color: white;
+    font-size: 14px;
 }
 
-.comment-form button:hover {
+.comment-form button:hover, .contact-form button:hover, .links a.button:hover {
     filter: brightness(150%);
+}
+
+.links a.button {
+    line-height: 100%;
 }
 
 
@@ -253,7 +258,7 @@ h3 > a:hover {
         /* padding: 1% 10%; */
 
         display: grid;
-        grid-template-columns: 79% 19%;
+        grid-template-columns: 77% 21%;
         grid-column-gap: 2%;
     }
 
@@ -267,7 +272,7 @@ h3 > a:hover {
 @media(min-width:1600px) { 
 
     .whole-page {
-        margin: 1% 20%;
+        margin: 1% 15%;
     }
 
 }

@@ -47,7 +47,9 @@ footer {
 }
 
 .legal {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
     background-color: #171717;
     padding: 0 0 0.5rem 0;
@@ -55,7 +57,11 @@ footer {
     font-family: var(--gui-font);
     text-align: center;
 
-    color: white;
+    color: white;   
+}
+
+.legal p {
+    align-self: flex-end;
 }
 
 .github {

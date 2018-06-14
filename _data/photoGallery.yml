@@ -1,17 +1,23 @@
 - title: Tile
+  id: tile
   url: /media/images/gallery/001.JPG
 
 - title: East Side
+  id: east-side
   url: /media/images/gallery/005.JPG
 
 - title: North Side
+  id: north-side
   url: /media/images/gallery/007 Blessing Hill North side.JPG
 
 - title: Pathway
+  id: pathway
   url: /media/images/gallery/100_0129.JPG
 
 - title: Main Garden
+  id: main-garden
   url: /media/images/gallery/DSC01730_1024x768.JPG
 
 - title: Side Garden
+  id: side-garden
   url: /media/images/gallery/DSC01734_1024x768.JPG
