@@ -5,6 +5,15 @@ id: 0
 cover: /media/images/books/KeepingBlessingHillCover.PNG
 back: /media/images/books/KeepingBlessingHillBack.jpg
 description: "Keeping Blessing Hill is the story of how two very flawed people built a welcoming home out of a dilapidated barn, turned a wildly overgrown hill into a garden, and lived out a commitment to honor Christ in every aspect of their lives by opening their hearts to whatever God wanted to do. It turned out what God had in mind was “keeping”: keeping a house and garden, keeping an open door, keeping a strong marriage, and keeping devotion to those things that are eternal. Meditations about joy and glory and wonder mingle with practical household tips, recipes, and amusing stories about a family that knows how to keep life jolly as readers gain a fresh attentiveness to and perspective on God, nature, and relationships."
+back-text: none
+endorsement-info:
+- title: Morgan James Faith
+  img: /media/images/morganjamesfaith.png
+  url: https://www.morgan-james-publishing.com/
+- title: Habitat for Humanity
+  img: /media/images/h4h-bp-logowebsite1.png
+  url: https://www.morgan-james-publishing.com/giving-back/
+available-text: "Available through your favorite bookstore or online at..."
 links:
 - title: Buy from Amazon
   img: https://upload.wikimedia.org/wikipedia/commons/7/70/Amazon_logo_plain.svg

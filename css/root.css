@@ -1,13 +1,14 @@
 :root {
     --bg-color: hsl(201, 18%, 85%);
 
-    --accent-color: #692254;
-    --brand-primary: #9969a0;
+    --accent-color: #CF0796;
+    --brand-primary: #692254;/*#9969a0; */
 
-    --primary-color: var(--brand-primary);/* #66A1D5;*/
+    --primary-color: #CF0796;/*var(--brand-primary);/* #66A1D5;*/
     --highlight-color: #d4b9d8;
 
     --link-color: #3cb6ac;
+    --link-hover: #2e8d85;
 
     --post-font: Georgia, 'Times New Roman', Times, serif;
     --gui-font: Verdana;

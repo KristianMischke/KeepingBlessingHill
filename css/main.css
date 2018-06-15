@@ -37,10 +37,12 @@ main {
 }
 
 a {
-
     color: var(--link-color);
     text-decoration: none;
+}
 
+a:hover {
+    color: var(--link-hover);
 }
 
 #sidebar.content {
@@ -49,11 +51,11 @@ a {
 }
 
 h3 > a {
-    color: var(--brand-primary);
+    color: var(--accent-color);
 }
 
 h3 > a:hover {
-    color: var(--accent-color);
+    color: var(--brand-primary);
 }
 
 /* POST STYLING */
@@ -67,11 +69,11 @@ h3 > a:hover {
 }
 
 .post-title, .post-title > a, .post-title > a:visited {
-    color: var(--brand-primary);
+    color: var(--accent-color);
 }
 
 .post-title > a:hover {
-    color: var(--accent-color);
+    color: var(--brand-primary);
 }
 
 /* COMMENT FORM STYLING */
@@ -116,8 +118,8 @@ h3 > a:hover {
 
     margin: 0.5rem 0;
 
-    background: var(--brand-primary);
-    border: 3px solid #5d0e75;
+    background: var(--highlight-color);
+    border: 3px solid var(--brand-primary);
     border-radius: 3px;
 
     font-family: var(--gui-font);
@@ -128,7 +130,7 @@ h3 > a:hover {
 }
 
 .comment-form button:hover, .contact-form button:hover, .links a.button:hover {
-    filter: brightness(150%);
+    filter: brightness(120%);
 }
 
 .links a.button {
@@ -213,7 +215,46 @@ h3 > a:hover {
     display: block;
 }
 
+.book-detail .book-cover {
+    float: left;
+    margin: 0 1rem 1rem;
+    width: 40%;
+    position: relative;
+    box-sizing: border-box;
+}
 
+.book-detail .book-cover img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.book-detail .book-cover:hover img {
+    width: 98%;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.book-detail .book-cover p {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* BOOK CARD STYLING */
+img.book-card-cover {
+    width: 60%;
+}
+
+img.book-card-cover:hover {
+    width: 59%;
+}
 
 
 /* ABOUT PAGE STYLING */

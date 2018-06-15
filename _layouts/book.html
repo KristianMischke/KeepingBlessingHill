@@ -5,14 +5,31 @@ permalink: /books/index.html
 <div class="book-detail">
     <h3>{{ page.title }}</h3>
     <div class="description">
-        <img src="{{ page.cover }}" alt="Book Cover" width="40%" style="float:left; margin: 0 1rem 1rem;">
+        <div class="book-cover">
+            <img onclick="switchCover()" class="front" src="{{ page.cover }}" alt="Book Cover" width="100%">
+            <p onclick="switchCover()" style="display:none;">{{ page.back-text }}</p>
+        </div>
         <p>{{ page.description }}</p>
     </div>
     <br style="clear:left;">
     <br>
-    <p>Available through your favorite bookstore or online at...</p>
+    <div style="display: flex; align-items: center;">
+    {% for link in page.endorsement-info %}
+        <a href="{{ link.url }}" {% if link.img == 'none' %}class="button"{% endif %}>
+        {% if link.img != 'none' %}
+            <img src="{{ link.img }}" alt="{{ link.title }}" width="200px">
+        {% else %}
+            <p>{{ link.title }}</p>
+        {% endif %}
+        </a>
+    {% endfor %}
+    </div>
+    <p>{{ page.available-text }}</p>
     <div class="links">
     {% for link in page.links %}
+        {% if link.img == 'none' %}
+        <p>or</p>
+        {% endif %}
         <a href="{{ link.url }}" {% if link.img == 'none' %}class="button"{% endif %}>
         {% if link.img != 'none' %}
             <img src="{{ link.img }}" alt="{{ link.title }}" width="100px">
@@ -23,3 +40,28 @@ permalink: /books/index.html
     {% endfor %}
     </div>
 </div>
+
+
+
+<script>
+    switchCover = function() {
+        let cover = document.querySelector(".book-cover img");
+        let backText = document.querySelector(".book-cover p");
+        if(cover.classList.contains("front")){
+            cover.classList.add("back");
+            cover.classList.remove("front");
+            {% if page.back != 'none' %}
+            cover.setAttribute("src", "{{ page.back }}");
+            {% else %}
+            {% if page.back-text != 'none' %}
+            backText.setAttribute("style", "display: block;");
+            {% endif %}
+            {% endif %}
+        } else if(cover.classList.contains("back")){
+            cover.classList.add("front");
+            cover.classList.remove("back");
+            cover.setAttribute("src", "{{ page.cover }}");
+            backText.setAttribute("style", "display: none;");
+        }
+    }
+</script>

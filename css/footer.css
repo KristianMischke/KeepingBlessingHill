@@ -67,7 +67,7 @@ footer {
 .github {
     width: 32px;
     height: 32px;
-    fill: var(--brand-primary);
+    fill: var(--accent-color);
     transform: translateY(25%);
 }
 

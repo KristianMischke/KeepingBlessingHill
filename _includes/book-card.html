@@ -1,5 +1,5 @@
-<h3>{{ book.title }}</h3>
+<h3><a href="book.url">{{ book.title }}</a></h3>
 <a href="{{ book.url }}">
-    <img src="{{ book.cover }}" alt="Book Cover" width="60%">
+    <img class="book-card-cover" src="{{ book.cover }}" alt="Book Cover">
 </a>
 <p>{{ book.description | truncatewords: 20 }}</p>

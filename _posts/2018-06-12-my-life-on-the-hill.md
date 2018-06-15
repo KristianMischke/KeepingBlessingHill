@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "_INSERT TITLE_"
+title:  "My Life on the Hill"
 date:   2018-06-12 12:00:00 -0500
 categories:
 ---
