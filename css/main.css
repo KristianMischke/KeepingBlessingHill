@@ -179,6 +179,14 @@ h3 > a:hover {
 
 
 /* ARCHIVE STYLING */
+.archive .archive-date ul {
+    display: none;
+}
+
+.archive .archive-date.open ul {
+    display: block;
+}
+
 .archive {
     font-size: 1rem;
 
@@ -193,6 +201,10 @@ h3 > a:hover {
 .archive h3 {
     font-size: 1.25rem;
     margin: 0.5rem;
+}
+
+.archive h3:hover {
+    cursor: pointer;
 }
 
 .archive ul {

@@ -106,21 +106,86 @@ li.nav-item.active > a {
     font-family: 'Elsie', cursive;
 }
 
-.brand > h1 {
-    margin: 0;
-    padding: 0;
+.brand .joyce {
+    font-size: 1rem;
+    padding: 1.2rem;
 
-    font-size: 24px;
+    color: var(--link-color);
+
+    font-family: cursiveFont;
+    border-left: 4px solid var(--link-color);
+    border-top: 4px solid var(--link-color);
+    border-right: 4px solid var(--link-color);
+}
+
+.brand > h3::before {
+    position: absolute;
+    content: '';
+    text-align: center;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    transform: translateY(-10px);
+
+    border-left: 4px solid var(--link-color);
+    border-right: 4px solid var(--link-color);
+    border-bottom: 4px solid var(--link-color);
+    z-index: -1;
+}
+
+.brand > h1, .brand > h2, .brand > h3, .brand > h4, .brand > h5 {
+    margin: 0 20%;
+    padding: 0;
+    position: relative;
+
     text-align: center;
 
     box-sizing: border-box;
+    z-index: 1;
+}
+
+.brand > h3 {
+    font-size: 1rem;
+}
+
+@media(min-width:700px) {
+    .brand .joyce {
+        font-size: 2rem;
+    }
+    .brand > h3 {
+        font-size: 24px;
+    }
+
+    .brand a {
+        margin: 16px 20%;
+    }
+}
+
+@media(min-width:1200px) {
+    .brand > h1, .brand > h2, .brand > h3, .brand > h4, .brand > h5 {
+        margin: 0 25%;
+    }
+}
+
+@media(min-width:1600px) {
+    .brand > h1, .brand > h2, .brand > h3, .brand > h4, .brand > h5 {
+        margin: 0 32%;
+    }
 }
 
 .brand a, .brand a:hover, .brand a:visited {
     display: block;
-    padding: 16px 24px;
+    margin: 8px 20%;
     text-decoration: none;
     color: var(--brand-primary);
+
+    background-color: white;
 }
 
 .brand .secondary-color {
@@ -131,20 +196,23 @@ li.nav-item.active > a {
     font-family: 'Elsie Swash Caps', cursive;
 }
 
+
+
+
+
 .hydrangea {
     display: none;
     position: absolute;
     fill: var(--primary-color);
-    width: 15vw;
-    top: 46.5%;
-}
-.hydrangea.left {
-    transform: rotate(-90deg) scaleY(-1);
-    left: 5vw;
-}
-.hydrangea.right {
-    transform: rotate(90deg) scaleY(-1);
-    right: 5vw;
+    width: 6%;
+    height: 5%;
+    margin: 0 47%;
+    box-sizing: border-box;
+    left: 0;
+    top: 65px;
+    z-index: 2;
+    background-color: white;
+
 }
 
 @media(min-width:900px) {
@@ -183,7 +251,18 @@ li.nav-item.active > a {
     }
 
     .hydrangea {
-        /* display: block; */
+        display: block;
+        width: 10%;
+        height: 5%;
+        margin: 0 45%;
     }
 
+}
+
+@media(min-width:1600px) {
+    .hydrangea {
+        width: 5%;
+        height: 5%;
+        margin: 0 47.5%;
+    }
 }

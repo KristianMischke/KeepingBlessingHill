@@ -13,3 +13,8 @@
     --post-font: Georgia, 'Times New Roman', Times, serif;
     --gui-font: Verdana;
 }
+
+@font-face {
+    font-family: cursiveFont;
+    src: url("\\media\\5th-grade-cursive\\5thgradecursive-2-italic.ttf");
+}

@@ -1,10 +1,27 @@
 <h2>Blog Archive</h2>
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
-{% for yearMonth in postsByYearMonth %}
-    <h3>{{ yearMonth.name }}</h3>
-    <ul>
-        {% for post in yearMonth.items %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
+
+{% for post in site.posts %}
+    {% assign currentDate = post.date | date: "%Y" %}
+    {% if currentDate != myDate %}
+        {% unless forloop.first %}</ul></div>{% endunless %}
+        <div class="archive-date {% if forloop.first %}open{% endif %}" id="{{ currentDate }}"><h3><a onclick="toggleArchiveDate({{ currentDate }})">{{ currentDate }}</a></h3>
+        <ul>
+        {% assign myDate = currentDate %}
+    {% endif %}
+    <li><a href="{{ post.url }}"><span>{{ post.date | date: "%B %-d" }}</span> - {{ post.title }}</a></li>
+    {% if forloop.last %}</ul></div>{% endif %}
 {% endfor %}
+
+
+
+<script>
+    toggleArchiveDate = function(date) {
+        let archiveDate = document.getElementById(date);//.querySelector("#" + date);
+        if(archiveDate.classList.contains("open")){
+            archiveDate.classList.remove("open");
+        } else {
+            archiveDate.classList.add("open");
+        }
+    }
+</script>
