@@ -1,6 +1,6 @@
 window.onload = function() {
     // make blog post links open in a blank tab
-    const links = document.querySelectorAll('.post-content a, .book-detail a');
+    const links = document.querySelectorAll('.post-content a, .book-detail a, footer .legal a');
     for(let i = 0; i < links.length; i++) {
         elem = links[i];
         elem.setAttribute("target", "_blank");

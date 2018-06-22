@@ -42,7 +42,9 @@
 
                 <div class="books">
                 {% for book in site.books reversed %}
+                    {% if book.url != page.url %}
                     {% include book-card.html %}
+                    {% endif %}
                 {% endfor %}
                 </div>
             

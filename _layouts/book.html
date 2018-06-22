@@ -13,7 +13,7 @@ permalink: /books/index.html
     </div>
     <br style="clear:left;">
     <br>
-    <div style="display: flex; align-items: center;">
+    <div style="display: flex; align-items: center; flex-wrap: wrap;">
     {% for link in page.endorsement-info %}
         <a href="{{ link.url }}" {% if link.img == 'none' %}class="button"{% endif %}>
         {% if link.img != 'none' %}

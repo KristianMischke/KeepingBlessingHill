@@ -182,7 +182,7 @@ h3 > a:hover {
 .archive {
     font-size: 1rem;
 
-    border-top: 2px solid var(--highlight-color);
+    /* border-top: 2px solid var(--highlight-color); */
 }
 
 .archive h2 {
@@ -195,15 +195,24 @@ h3 > a:hover {
     margin: 0.5rem;
 }
 
+.archive ul {
+    padding: 0;
+    list-style-type: none;
+}
 
 
 
 
 /* BOOK DETAIL STYLING */
+.book-detail {
+    margin-bottom: 50%;
+}
+
 .book-detail .links {
     width: 100%;
     height: 75px;
     display: flex;
+    flex-wrap: wrap;
 
     box-sizing: border-box;
 
@@ -216,20 +225,19 @@ h3 > a:hover {
 }
 
 .book-detail .book-cover {
-    float: left;
-    margin: 0 1rem 1rem;
-    width: 40%;
+    margin: 0 30%;
+    width: 100%;
     position: relative;
     box-sizing: border-box;
 }
 
 .book-detail .book-cover img {
-    width: 100%;
+    width: 40%;
     box-sizing: border-box;
 }
 
 .book-detail .book-cover:hover img {
-    width: 98%;
+    width: 38%;
     margin: 1%;
     cursor: pointer;
 }
@@ -247,13 +255,41 @@ h3 > a:hover {
 }
 
 
+
+/* BOOKS LIST */
+
+
 /* BOOK CARD STYLING */
+.books {
+    padding: 0 2rem;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.book-card h3 {
+    width: 100%;
+}
+
+.book-content a {
+    display: inline-block;
+    width: 200px;
+    margin-right: 2rem;
+}
+
+.book-content p {
+    width: 50%;
+}
+
 img.book-card-cover {
-    width: 60%;
+    width: 100%;
 }
 
 img.book-card-cover:hover {
-    width: 59%;
+    width: 99%;
 }
 
 
@@ -270,6 +306,39 @@ img.book-card-cover:hover {
     margin-right: 1rem;
 }
 
+@media(min-width:750px) {
+
+    .book-content a {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .book-content p {
+        width: unset;
+    }
+
+    /* BOOK DETAIL STYLING */
+    .book-detail .book-cover {
+        float: left;
+        margin: 0 1rem 1rem;
+        width: 300px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .book-detail .book-cover img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .book-detail .book-cover:hover img {
+        width: 98%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+}
+
 
 /* small screens */
 @media(min-width:900px) {
@@ -284,6 +353,11 @@ img.book-card-cover:hover {
 
     .archive {
         border-top: none;
+    }
+
+    /* BOOK DETAIL STYLING */
+    .book-detail .book-cover {
+        width: 350px;
     }
 
 }
@@ -305,6 +379,19 @@ img.book-card-cover:hover {
 
     .content {
         /* margin: 0; */
+    }
+
+    /* BOOK CARD STYLING */
+    .books {
+        padding: 0;
+    }
+
+    .book-content {
+        flex-direction: column;
+    }
+
+    .book-content a {
+        width: 60%;
     }
 
 }

@@ -1,5 +1,9 @@
-<h3><a href="book.url">{{ book.title }}</a></h3>
-<a href="{{ book.url }}">
-    <img class="book-card-cover" src="{{ book.cover }}" alt="Book Cover">
-</a>
-<p>{{ book.description | truncatewords: 20 }}</p>
+<div class="book-card">
+    <h3><a href="book.url">{{ book.title }}</a></h3>
+    <div class="book-content">
+        <a href="{{ book.url }}">
+            <img class="book-card-cover" src="{{ book.cover }}" alt="Book Cover">
+        </a>
+        <p>{{ book.description | truncatewords: 20 }}</p>
+    </div>
+</div>

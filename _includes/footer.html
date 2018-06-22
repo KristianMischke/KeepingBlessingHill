@@ -1,4 +1,5 @@
 <div class="other">
+    {% if page.url != "/about.html" %}
     <div class="about">
         <h3>
             <a href="/about.html">About Joyce</a>
@@ -7,11 +8,13 @@
         <p>I am a Baltimore gal, born and bred. At one time I counted 130 relatives also living in and around Baltimore. I attended Eastern High School when it functioned like a private girls’ school and graduated from Towson State Teachers College (now Towson University) with a degree in Art/Education. John and I have been married for fifty-five years and most of that time have worked as full-time staff for the Navigators, an international Christian organization that seeks to cultivate and encourage disciples of Jesus Christ. We lived in Holland and in the Philippines before we came to settle in Maryland.</p>
         <a href="/about.html">Read More...</a>
     </div>
+    {% endif %}
     <div class="archive">
         {% include archive.html %}
     </div>
 </div>
 <div class="legal">
-    <p>Proudly hosted by GitHub <a href="https://github.com/" target="_blank"><img class="svg github" src="/media/images/github.svg" align="center"></a></p>
-    <p>Made possible with <a href="https://formspree.io/">FormSpree</a></p>
+    <li><p>Website created by <a href="http://www.kkcoder.net/">Kristian Mischke</a><img class="icon-hack"/></p></li>
+    <li><p>Proudly hosted by GitHub <a href="https://github.com/" target="_blank"><img class="svg github" src="/media/images/github.svg" align="center"></a></p></li>
+    <li><p>Made possible with <a href="https://formspree.io/">FormSpree</a><img class="icon-hack"/></p></li>
 </div>
