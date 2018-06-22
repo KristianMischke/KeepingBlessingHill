@@ -5,8 +5,11 @@ title: "photography"
 showSidebar: "true"
 ---
 
+<div class="gallery">
 {% for photo in site.data.photoGallery %}
-<img src="{{ photo.url }}" alt="{{ photo.title }}" width="80%" style="margin-left: 10%;">
-<h3>{{ photo.title }}</h3>
-<p>{{ photo.description }}</p>
+    <div class="photo">
+        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');"></div>
+        <p>{{ photo.caption }}</p>
+    </div>
 {% endfor %}
+</div>

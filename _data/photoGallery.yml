@@ -1,23 +1,72 @@
-- title: Tile
+- caption: The barn as we first knew it
+  id: barn-first
+  url: (1) The barn.jpg
+
+- caption: The barn as we first knew it
+  id: barn-first-2
+  url: (2) Blessing Hill East side before renovation began.jpg
+
+- caption: The barn as we enjoy it today
+  id: barn-today-east
+  url: (3) Blessing Hill East side.jpg
+
+- caption: The barn as we enjoy it today
+  id: barn-today-north
+  url: (4) Blessing Hill North side.JPG
+
+- caption: The barn as we enjoy it today
+  id: barn-today-south
+  url: (5) Blessing Hill South side.JPG
+
+- caption: The greenhouse
+  id: greenhouse
+  url: (6) The Greenhouse.JPG
+
+- caption: Blessing Hill's famous chickens
+  id: chickens
+  url: (7) Blessing Hill chickens.JPG
+
+- caption: Blessing Hill sign
+  id: blessing-hill-welcome
+  url: (8) sign.jpg
+
+- caption: John and Joyce Sackett
+  id: john-and-joyce
+  url: (9) John and Joyce.JPG
+
+
+- caption:
   id: tile
-  url: /media/images/gallery/001.JPG
+  url: 001.JPG
 
-- title: East Side
+- caption:
   id: east-side
-  url: /media/images/gallery/005.JPG
+  url: 005.JPG
 
-- title: North Side
-  id: north-side
-  url: /media/images/gallery/007 Blessing Hill North side.JPG
+- caption: Free-roaming chickens
+  id: chickens-roaming
+  url: 043.JPG
 
-- title: Pathway
+- caption:
   id: pathway
-  url: /media/images/gallery/100_0129.JPG
+  url: 100_0129.JPG
 
-- title: Main Garden
+- caption:
+  id: pathway-2
+  url: 100_0167.JPG
+
+- caption:
+  id: old-barn
+  url: 4056.JPG
+
+- caption:
+  id: chicks
+  url: 20180405_093410 3-day -old chicks.jpg
+
+- caption: Main Garden
   id: main-garden
-  url: /media/images/gallery/DSC01730_1024x768.JPG
+  url: DSC01730_1024x768.JPG
 
-- title: Side Garden
+- caption: Side Garden
   id: side-garden
-  url: /media/images/gallery/DSC01734_1024x768.JPG
+  url: DSC01734_1024x768.JPG

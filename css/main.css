@@ -119,7 +119,7 @@ h3 > a:hover {
     margin: 0.5rem 0;
 
     background: var(--highlight-color);
-    border: 3px solid var(--brand-primary);
+    border: 3px solid #b581bd;
     border-radius: 3px;
 
     font-family: var(--gui-font);
@@ -130,7 +130,7 @@ h3 > a:hover {
 }
 
 .comment-form button:hover, .contact-form button:hover, .links a.button:hover {
-    filter: brightness(120%);
+    filter: brightness(110%);
 }
 
 .links a.button {
@@ -237,8 +237,6 @@ h3 > a:hover {
 }
 
 .book-detail .book-cover:hover img {
-    width: 38%;
-    margin: 1%;
     cursor: pointer;
 }
 
@@ -288,10 +286,6 @@ img.book-card-cover {
     width: 100%;
 }
 
-img.book-card-cover:hover {
-    width: 99%;
-}
-
 
 /* ABOUT PAGE STYLING */
 
@@ -305,6 +299,48 @@ img.book-card-cover:hover {
 
     margin-right: 1rem;
 }
+
+
+
+/* PHOTO GALLERY STYLING */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery .photo {
+    position: relative;
+    width: 70vmin;
+    height: 70vmin;
+    margin-bottom: 1rem;
+}
+
+.gallery .photo .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery .photo p {
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    color: var(--brand-primary);
+    background-color: #ffffffb3;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    z-index: 2;
+}
+
+
 
 @media(min-width:750px) {
 
@@ -332,8 +368,6 @@ img.book-card-cover:hover {
     }
     
     .book-detail .book-cover:hover img {
-        width: 98%;
-        margin: 1%;
         cursor: pointer;
     }
 
@@ -358,6 +392,45 @@ img.book-card-cover:hover {
     /* BOOK DETAIL STYLING */
     .book-detail .book-cover {
         width: 350px;
+    }
+
+    /* PHOTO GALLERY STYLING */
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        padding-left: 10%;
+    }
+    
+    .gallery .photo {
+        width: 15vmin;
+        height: 15vmin;
+        margin: 0;
+    }
+    
+    .gallery .photo .image {
+        transition: transform 1s;
+    }
+    
+    .gallery .photo:hover .image {
+        transform: scale(1.75, 1.75);
+        z-index: 1;
+    }
+    
+    .gallery .photo p {
+        color: #00000000;
+        background-color: #00000000;
+
+        font-size: 0.8rem;
+        
+        transition: all 1s;
+    }
+    
+    .gallery .photo:hover p {
+        color: var(--brand-primary);
+        background-color: #ffffffb3;
+    
+        transform: scale(1.75, 1.75);
     }
 
 }
