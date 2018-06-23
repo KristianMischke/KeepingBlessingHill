@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Life on the Hill"
-date:   2018-06-22 12:00:00 -0500
+date:   2018-06-23 12:00:00 -0500
 categories:
 ---
 All the things I learned about in art classes in college- like color, texture, form, function- are what guide me as I keep a house and a garden on Blessing Hill. William Morris, the nineteenth century British artist, said, “Have nothing in your home that you do not believe to be beautiful or know to be useful.” This is my thinking, too, and I’m still learning how to live it out. My husband just read this paragraph and said that he’s glad to know he can stay here on the hill, because he considers himself a very useful, helpful person, which he is!
