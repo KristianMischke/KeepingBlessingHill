@@ -99,7 +99,7 @@ li.nav-item.active > a {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 50px 0 0 0;
 
     box-sizing: border-box;
 
@@ -201,15 +201,15 @@ li.nav-item.active > a {
 
 
 .hydrangea {
-    display: none;
-    position: relative;
+    display: block;
+    position: absolute;
     fill: var(--primary-color);
-    width: 10%;
+    width: 16%;
     height: 30%;
-    margin: 0 45%;
+    margin: 0 42%;
     box-sizing: border-box;
     left: 0;
-    top: 15px;
+    top: 10px;
     z-index: 2;
     background-color: white;
 
@@ -251,7 +251,11 @@ li.nav-item.active > a {
     }
 
     .hydrangea {
-        display: block;
+        position: relative;
+        top: 15px;
+        width: 10%;
+        height: 30%;
+        margin: 0 45%;
     }
 
 }
