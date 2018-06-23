@@ -232,11 +232,9 @@ a.button {
 }
 
 
-
-
 /* BOOK DETAIL STYLING */
 .book-detail {
-    margin-bottom: 50%;
+    margin-bottom: 3rem;
 }
 
 .book-detail .links {
