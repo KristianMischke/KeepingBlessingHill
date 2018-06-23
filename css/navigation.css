@@ -99,7 +99,7 @@ li.nav-item.active > a {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 50px 0 0 0;
+    padding: 30px 0 0 0;
 
     box-sizing: border-box;
 
@@ -108,7 +108,7 @@ li.nav-item.active > a {
 
 .brand .joyce {
     font-size: 1rem;
-    padding: 1.2rem;
+    padding: 0.4rem;
 
     color: var(--link-color);
 
@@ -162,6 +162,7 @@ li.nav-item.active > a {
 @media(min-width:700px) {
     .brand .joyce {
         font-size: 2rem;
+        padding: 1.2rem;
     }
     .brand > h3 {
         font-size: 24px;
@@ -209,12 +210,12 @@ li.nav-item.active > a {
     display: block;
     position: absolute;
     fill: var(--primary-color);
-    width: 82px;
+    width: 14%;
     height: 54px;
-    margin: 0 42%;
+    margin: 0 43%;
     box-sizing: border-box;
     left: 0;
-    top: 10px;
+    top: -5px;
     z-index: 2;
     background-color: white;
 
