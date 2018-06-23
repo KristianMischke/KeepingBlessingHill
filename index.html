@@ -9,6 +9,7 @@ title: "home"
     <div class="post">
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <div class="post-content">{{ post.content }}</div>
+        <a href="{{ post.url }}#{{ post.title | url_encode }}_post_comment" class="button">Add Comment</a>
     </div>
 {% endfor %}
 {% for post in site.posts limit:2 offset:1 %}

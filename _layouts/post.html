@@ -20,7 +20,7 @@ layout: default
     {% endfor %}
 </div>
 {% endif %}
-
+<a id="{{ page.title | url_encode }}_post_comment"></a>
 <form class="comment-form" method="POST" action="https://api.staticman.net/v2/entry/KristianMischke/KeepingBlessingHill/master/comments">
     <input name="options[redirect]" type="hidden" value="{{ page.url }}">
     <!-- e.g. "2016-01-02-this-is-a-post" -->

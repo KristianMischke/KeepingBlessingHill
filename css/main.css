@@ -116,6 +116,7 @@ h3 > a:hover {
     width: 44%;
     height: 2.5rem;
 
+    padding: 0;
     margin: 0.5rem 0;
 
     background: var(--highlight-color);
@@ -129,11 +130,29 @@ h3 > a:hover {
     font-size: 14px;
 }
 
-.comment-form button:hover, .contact-form button:hover, .links a.button:hover {
+a.button {
+    width: 44%; 
+    height: 2rem;
+
+    margin: 0;
+    padding: 0.5rem 0 0;
+
+    background: var(--highlight-color);
+    border: 3px solid #b581bd;
+    border-radius: 3px;
+
+    font-family: var(--gui-font);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.comment-form button:hover, .contact-form button:hover, a.button:hover {
     filter: brightness(110%);
 }
 
-.links a.button {
+a.button {
     line-height: 100%;
 }
 
@@ -232,7 +251,7 @@ h3 > a:hover {
     align-items: center;
 }
 
-.book-detail .links a {
+.book-detail .links a, a.button {
     display: block;
 }
 
