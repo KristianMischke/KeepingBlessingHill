@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Goodbye Jeanine
+in-print: out of print
 id: 1
 cover: /media/images/books/GoodbyeJeanineCover.jpg
 back: none

@@ -1,6 +1,7 @@
 ---
 layout: book
 title: In God's Garden
+in-print: out of print
 id: 2
 cover: /media/images/books/InGodsGardenCover.jpg
 back: none

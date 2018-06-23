@@ -4,6 +4,7 @@ permalink: /books/index.html
 ---
 <div class="book-detail">
     <h3>{{ page.title }}</h3>
+    {% if page.in-print %}<h4>({{ page.in-print }})</h4>{% endif %}
     <div class="description">
         <div class="book-cover">
             <img onclick="switchCover()" class="front" src="{{ page.cover }}" alt="Book Cover" width="100%">
