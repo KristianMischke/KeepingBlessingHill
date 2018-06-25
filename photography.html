@@ -8,7 +8,7 @@ showSidebar: "true"
 <div class="gallery">
 {% for photo in site.data.photoGallery %}
     <div class="photo">
-        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');" onclick='showModal({{ forloop.counter }});'></div>
+        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');" onclick='showModal({{ forloop.index0 }});'></div>
     </div>
 {% endfor %}
 
