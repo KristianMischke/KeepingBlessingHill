@@ -8,8 +8,31 @@ showSidebar: "true"
 <div class="gallery">
 {% for photo in site.data.photoGallery %}
     <div class="photo">
-        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');"></div>
-        <p>{{ photo.caption }}</p>
+        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');" onclick='showModal("/media/images/gallery/{{ photo.url }}", "{{ photo.caption | escape }}");'></div>
     </div>
 {% endfor %}
+
+<div id="photo-modal" class="modal" onclick="hideModal();">
+    <span class="modal-close" onclick="hideModal();">&times;</span>
+    <img class="modal-content" id="modal-image"/>
+    <div id="modal-caption"></div>
 </div>
+
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('photo-modal');
+    var modalImg = document.getElementById("modal-image");
+    var captionText = document.getElementById("modal-caption");
+
+    let showModal = (url, caption) => {
+        modal.style.display = "block";
+        modalImg.src = url;
+        captionText.innerHTML = caption;
+    };
+
+    let hideModal = () => {
+        modal.style.display = "none";
+    };
+</script>
