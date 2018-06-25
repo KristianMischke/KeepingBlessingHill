@@ -526,8 +526,12 @@ img.book-card-cover {
         margin: 0;
     }
     
-    .gallery .photo .image {
-        transition: transform 1s;
+    /* .gallery .photo .image {
+        transition: all 1s;
+    } */
+
+    .gallery .photo .image:hover {
+        filter: brightness(130%);
     }
 
 }
