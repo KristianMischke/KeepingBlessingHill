@@ -8,31 +8,68 @@ showSidebar: "true"
 <div class="gallery">
 {% for photo in site.data.photoGallery %}
     <div class="photo">
-        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');" onclick='showModal("/media/images/gallery/{{ photo.url }}", "{{ photo.caption | escape }}");'></div>
+        <div class="image" style="background-image: url('/media/images/gallery/low-res/{{ photo.url }}');" onclick='showModal({{ forloop.counter }});'></div>
     </div>
 {% endfor %}
 
-<div id="photo-modal" class="modal" onclick="hideModal();">
+<div id="photo-modal" class="modal">
     <span class="modal-close" onclick="hideModal();">&times;</span>
+    <span class="modal-next" onclick="nextImage();">&gt;</span>
     <img class="modal-content" id="modal-image"/>
+    <span class="modal-back" onclick="prevImage();">&lt;</span>
     <div id="modal-caption"></div>
 </div>
 
 </div>
 
 <script>
-    // Get the modal
-    var modal = document.getElementById('photo-modal');
-    var modalImg = document.getElementById("modal-image");
-    var captionText = document.getElementById("modal-caption");
 
-    let showModal = (url, caption) => {
+    let photoGallery = [
+        {% for photo in site.data.photoGallery %}
+        {
+            'url': '/media/images/gallery/{{ photo.url | url_escape }}',
+            'caption': '{{ photo.caption | escape }}'
+        }
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+
+    // Get the modal
+    let modal = document.getElementById('photo-modal');
+    let modalImg = document.getElementById("modal-image");
+    let captionText = document.getElementById("modal-caption");
+
+    let currentIndex = 0;
+
+    const showModal = (index) => {
         modal.style.display = "block";
-        modalImg.src = url;
-        captionText.innerHTML = caption;
+        modalImg.src = photoGallery[index]['url'];
+        captionText.innerHTML = photoGallery[index]['caption'];
     };
 
-    let hideModal = () => {
+    const hideModal = () => {
         modal.style.display = "none";
     };
+
+    const nextImage = () => {
+        //let photoIndex = photoGallery.findIndex(obj => obj['url'] == modalImg.src.replace("%20", " "));
+
+        currentIndex++;
+        if(currentIndex >= photoGallery.length) {
+            currentIndex = 0;
+        }
+
+        showModal(currentIndex);
+    }
+
+    const prevImage = () => {
+        //let photoIndex = photoGallery.findIndex(obj => obj['url'] == modalImg.src);
+
+        currentIndex--;
+        if(currentIndex <= 0) {
+            currentIndex = photoGallery.length - 1;
+        }
+
+        showModal(currentIndex);
+    }
 </script>

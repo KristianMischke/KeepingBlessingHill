@@ -429,18 +429,36 @@ img.book-card-cover {
 }
 
 /* The Close Button */
-.modal-close {
+.modal-close,
+.modal-next,
+.modal-back {
     position: absolute;
-    top: 15px;
-    right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
+.modal-close {
+    top: 15px;
+    right: 35px;
+}
+
+.modal-next {
+    top: 50%;
+    right: 10%;
+}
+
+.modal-back {
+    top: 50%;
+    left: 10%;
+}
 
 .modal-close:hover,
-.modal-close:focus {
+.modal-close:focus,
+.modal-next:hover,
+.modal-next:focus,
+.modal-back:hover,
+.modal-back:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
