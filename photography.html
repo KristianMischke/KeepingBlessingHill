@@ -27,7 +27,7 @@ showSidebar: "true"
     let photoGallery = [
         {% for photo in site.data.photoGallery %}
         {
-            'url': '/media/images/gallery/{{ photo.url | url_escape }}',
+            'url': '/media/images/gallery/low-res/{{ photo.url | url_escape }}',
             'caption': '{{ photo.caption | escape }}'
         }
         {% unless forloop.last %},{% endunless %}
@@ -52,8 +52,6 @@ showSidebar: "true"
     };
 
     const nextImage = () => {
-        //let photoIndex = photoGallery.findIndex(obj => obj['url'] == modalImg.src.replace("%20", " "));
-
         currentIndex++;
         if(currentIndex >= photoGallery.length) {
             currentIndex = 0;
@@ -63,8 +61,6 @@ showSidebar: "true"
     }
 
     const prevImage = () => {
-        //let photoIndex = photoGallery.findIndex(obj => obj['url'] == modalImg.src);
-
         currentIndex--;
         if(currentIndex <= 0) {
             currentIndex = photoGallery.length - 1;
