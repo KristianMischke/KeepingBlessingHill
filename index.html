@@ -9,6 +9,11 @@ title: "home"
     <div class="post">
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <div class="post-content">{{ post.content }}</div>
+
+        {% assign social-text = post.title %}
+        {% assign social-url = "http://keepingblessinghill.com" | append: post.url %}
+        {% include social-bar.html %}
+
         <a href="{{ post.url }}#{{ post.title | url_encode }}_post_comment" class="button">Add Comment</a>
     </div>
 {% endfor %}
