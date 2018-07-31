@@ -27,12 +27,12 @@ layout: default
 {% endif %}
 <a id="{{ page.title | url_encode }}_post_comment"></a>
 <form class="comment-form" method="POST" action="https://api.staticman.net/v2/entry/KristianMischke/KeepingBlessingHill/master/comments">
-    <input name="options[redirect]" type="hidden" value="{{ page.url }}">
+    <input id="redirect-comment" name="options[redirect]" type="hidden" value="https://tranquil-tor-30132.herokuapp.com/comment/">
     <!-- e.g. "2016-01-02-this-is-a-post" -->
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <label>Add Comment</label><textarea name="fields[message]"></textarea>
-    <input name="fields[name]" type="text" placeholder="Name">
+    <label>Add Comment</label><textarea id="comment-message" name="fields[message]" onchange='updateRedirect("{{ page.url }}")' required></textarea>
+    <input id="comment-author" name="fields[name]" type="text" placeholder="Name" onchange='updateRedirect("{{ page.url }}")' required>
     <input name="fields[email]" type="email" placeholder="E-mail">
     
-    <button type="submit">Post Comment</button>
+    <button type="submit" onclick='updateRedirect("{{ page.url }}")'>Post Comment</button>
 </form>

@@ -34,12 +34,12 @@ comments:
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    #apiKey: "1q2w3e4r"
+    #apiKey: "hBQ5VvdO8J8vGLdJV+1Uc1c/vmnSVgCLhWYjtfb/HYuFW0eApt1PxR3TAUI0MWDeTGpP0XEU/cJB5V39IjzEj0CJ3/pzIAqTXJGZSvBg2KglFGvV3cAiTyw7cxWfkKvEPqRRbAdUOLVnxN/VfLWu9JMzsiRsT7+iHZPEvwti/L4="
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    #domain: "4r3e2w1q"
+    #domain: "FfU6xC5zYcU4ZYY6F6+91BDWz3+/1dQFT2lxeRAaSZeDi8VKcB9bvsryem6jpPrHm7kSSi0kRCzxGo0xLWa2umn1/gYs9xcx2PUuTqOMc7D2ubKn3u0MRMGVCV1oX5Od1x/OMDtjIM1fy9mOshZFkoIlTnoIMXbnQYRTNS2B0Rw="
 
   path: "_data/comments/{options.slug}"
 

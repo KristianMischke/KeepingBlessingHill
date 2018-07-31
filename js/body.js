@@ -18,3 +18,11 @@ function fitMainContent() {
     }
 
 }
+
+
+function updateRedirect(post) {
+    name = document.querySelector("#comment-author").value;
+    comment = document.querySelector("#comment-message").value;
+    //subscribe = docuemtn.querySelector("#comment-subscribe").value;
+    document.querySelector("#redirect-comment").value = `https://tranquil-tor-30132.herokuapp.com/comment/?name=${encodeURIComponent(name)}&comment=${encodeURIComponent(comment)}&post=${encodeURIComponent(post)}`;
+}
