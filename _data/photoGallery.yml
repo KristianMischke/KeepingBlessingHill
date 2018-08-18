@@ -84,11 +84,11 @@
 
 - caption: butterfly bush near the terrace
   id: butterfly
-  url: DSCN0885.JPG
+  url: DSCN0885.jpg
 
 - caption: Daily visitor to Blessing Hill. Just out of range, its twin!
   id: deer
-  url: DSCN0904.JPG
+  url: DSCN0904.jpg
 
 - caption:
   id: coneflowers
@@ -106,10 +106,10 @@
   id: birdbath
   url: DSCN0329.JPG
 
-- caption:
-  id: painting-garden
-  url: DSCN0331.JPG
+#- caption:
+#  id: painting-garden
+#  url: DSCN0331.JPG
 
-- caption:
-  id: hydrangeas-4
-  url: DSCN0321.JPG
+# - caption:
+#   id: hydrangeas-4
+#   url: DSCN0321.JPG
