@@ -68,4 +68,39 @@ showSidebar: "true"
 
         showModal(currentIndex);
     }
+
+
+
+    // arrow key controls... thanks https://jsfiddle.net/Sk8erPeter/Mhpy3/
+    function arrow_controls(keyCodeNumber) {
+        // console.log(keyCodeNumber);
+        var LEFT = 37,
+            UP = 38,
+            RIGHT = 39,
+            DOWN = 40;
+
+        switch (keyCodeNumber) {
+        case LEFT:
+            prevImage();
+            break;
+        case RIGHT:
+            nextImage();
+            break;
+        }
+
+        key_arrow_or_other.innerHTML += ' (keyCode: ' + keyCodeNumber + ')';
+    }
+
+    function checkKeycode(event) {
+        // handling Internet Explorer stupidity with window.event
+        // @see http://stackoverflow.com/a/3985882/517705
+        var keyDownEvent = event || window.event,
+            keycode = (keyDownEvent.which) ? keyDownEvent.which : keyDownEvent.keyCode;
+
+        arrow_controls(keycode);
+
+        return false;
+    }
+
+    document.onkeydown = checkKeycode;
 </script>
