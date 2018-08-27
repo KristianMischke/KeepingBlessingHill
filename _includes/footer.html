@@ -10,14 +10,7 @@
     </div>
     {% endif %}
     <div class="subscribe">
-        <h3 style="text-align: center;">Subscribe to receive instant notifications when a new post is released</h3>
-        <form class="subscribe-form" method="GET" action="https://tranquil-tor-30132.herokuapp.com/subscribe/?redirect={{ page.url }}">
-              <input type="text" placeholder="Name" name="name" required>
-              <br/>
-              <input type="text" placeholder="Email address" name="address" required>
-              <br/>
-              <button type="submit">Subscribe</button>
-        </form>
+        {% include subscribe.html %}
     </div>
     <div class="archive">
         {% include archive.html %}

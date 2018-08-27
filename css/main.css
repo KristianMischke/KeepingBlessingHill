@@ -14,6 +14,43 @@ body {
     margin: 1% 5%;
 }
 
+
+/* SUBSCRIBE BUBBLE */
+
+#subscribe-bubble {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+
+    right: -328px;    
+    top: 30%;
+
+    color: white;
+
+    transition: all 0.2s ease-in 0s;
+    z-index: 10;
+}
+
+#subscribe-bubble:hover {
+    right: -290px;
+}
+
+#subscribe-bubble.open {
+    right: 10px;
+}
+
+#subscribe-bubble > div > div {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin: 2rem;
+}
+
+#subscribe-bubble img {
+    position: relative;
+    width: 370px
+}
+
 /* MAIN CONTENT */
 
 main {
@@ -584,8 +621,8 @@ img.book-card-cover {
 
 }
 
-/* ADD GRID at 1200px */
-@media(min-width:1200px) {
+/* ADD GRID at 1100px */
+@media(min-width:1100px) {
 
     .whole-page {
         margin: 1% 10%;

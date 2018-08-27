@@ -34,7 +34,15 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-
+    <div id="subscribe-bubble">
+        <div>
+            <img src="/media/images/hydrangea-ui-bg.png" alt="" onclick='document.querySelector("#subscribe-bubble").classList.toggle("open");'>
+            <div>
+                {% include subscribe.html %}
+            </div>
+        </div>
+        <!--div><p>Consider Subscribing?!</p></div-->
+    </div>
 
     <div class="whole-page">
         <nav>
@@ -79,6 +87,7 @@
     <script src="/js/body.js"></script>
     <script src="/js/imgToSvg.js"></script>
     <script src="/js/linkCorrection.js"></script>
+    <script src="/js/subscribe.js"></script>
 
     {{ page.scripts }}
 

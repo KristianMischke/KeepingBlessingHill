@@ -30,6 +30,8 @@ footer {
     border-top: 2px solid var(--primary-color);
 
     z-index: 1;
+
+    line-height: 1.6;
 }
 
 .other {
@@ -95,7 +97,7 @@ footer {
 
 
 
-@media(min-width:1200px) {
+@media(min-width:1100px) {
 
     .other > div {
         width: 45%;
