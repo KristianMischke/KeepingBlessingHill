@@ -1,3 +1,11 @@
+- caption:
+  id: blessing-hill-welcome
+  url: (8) sign.jpg
+
+- caption: View from the north 1982
+  id: old-barn
+  url: 4056.JPG
+
 - caption: The barn as we first knew it
   id: barn-first
   url: (1) The barn.jpg
@@ -26,19 +34,15 @@
   id: chickens
   url: (7) Blessing Hill chickens.JPG
 
-- caption:
-  id: blessing-hill-welcome
-  url: (8) sign.jpg
-
 - caption: John and Joyce Sackett
   id: john-and-joyce
   url: (9) John and Joyce.JPG
 
-- caption:
+- caption: Garden stepping stone ("Peace and Goodness")
   id: tile
   url: 001.JPG
 
-- caption:
+- caption: View from the east
   id: east-side
   url: 005.JPG
 
@@ -46,23 +50,19 @@
   id: chickens-roaming
   url: 043.JPG
 
-- caption:
+- caption: April on Blessing Hill
   id: pathway
   url: 100_0129.JPG
 
-- caption:
+- caption: Herb bed
   id: pathway-2
   url: 100_0167.JPG
 
-- caption:
-  id: old-barn
-  url: 4056.JPG
-
-- caption:
+- caption: Three day old chicks
   id: chicks
   url: 20180405_093410 3-day -old chicks.jpg
 
-- caption: Main Garden
+- caption: Main Garden early May
   id: main-garden
   url: DSC01730_1024x768.JPG
 
@@ -70,11 +70,11 @@
   id: side-garden
   url: DSC01734_1024x768.JPG
 
-- caption:
+- caption: hydrangeas
   id: hydrangeas-1
   url: 20180615_165044.jpg
 
-- caption: hydrangeas
+- caption:
   id: hydrangeas-2
   url: 20180615_165157.jpg
 
@@ -90,11 +90,11 @@
   id: deer
   url: DSCN0904.jpg
 
-- caption:
+- caption: Purple cone flower on terrace
   id: coneflowers2
   url: DSCN0316.JPG
 
-- caption: Garden Stepstone
+- caption: Garden Stepping stone
   id: heart-shaped-tile
   url: DSCN0319.JPG
 
