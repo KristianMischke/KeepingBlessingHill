@@ -11,7 +11,7 @@ When we walk through the garden gate, we anticipate sweet air and enchantment. W
 to see order of the most pleasing kind…
 
 I need to revise that statement today, because of what’s been happening in my potager,
-my vegetable garden. Something⸺a raccoon?⸺has been stripping the tomato plants of all
+my vegetable garden. Something—a raccoon?—has been stripping the tomato plants of all
 tomatoes, no matter what size or color. No chance for any to ripen. This may be the first
 summer that we don’t eat any of our own tomatoes. Whatever is doing the damage, it doesn’t
 seem interested in the squash, cucumbers, beans or greens. Not yet, anyway. I walk into this
