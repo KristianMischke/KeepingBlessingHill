@@ -9,8 +9,8 @@ and why. She said we are all put here on earth to care passionately about
 something; that it’s not more willpower that makes writers go to their little rooms
 and write:
 
-“What impels the writer is a deep love for and respect for language, for literary
-forms, for books. It’s a privilege to muck about in sentences all morning.”
+> What impels the writer is a deep love for and respect for language, for literary
+forms, for books. It’s a privilege to muck about in sentences all morning.
 
 What do I care passionately about? Gardening? Yes. Writing? Yes. It is my
 privilege to live in a place where I may keep a garden and have a room of my own

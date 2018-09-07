@@ -6,7 +6,7 @@ categories:
 ---
 In my book, *In God’s Garden* (a devotional for gardeners) I wrote:
 
-The word *garden* conjures up all kinds of green images, of things growing beautifully.
+> The word **garden** conjures up all kinds of green images, of things growing beautifully.
 When we walk through the garden gate, we anticipate sweet air and enchantment. We expect
 to see order of the most pleasing kind…
 
