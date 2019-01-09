@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Winter Reading and Gardening"
+date:   2019-01-08 12:00:00 -0400
+categories:
+---
+Winter is the time for gardeners to read. Those of us who live in places with cold winters know there’s not much to be done in the garden except to gather fallen branches or shake heavy snow off the evergreens. This is the time to put a fire in the stove, make a cup of hot chocolate, and sit down with a stack of garden books to read. The books I choose either have lots of photographs or are written so well, I’d want to read them even if I wasn’t a gardener. Anything written by Tovah Martin fits the bill. Especially fitting for a winter read is *The Unexpected Houseplant* (Timber Press, Portland/London; 2012) which I bought last Fall when I met Tovah and she signed my copy.
+
+I’ve always had houseplants, thanks to my mother’s example and what I observed and practiced during the years we lived in Holland. The Dutch are great gardeners, indoors and out. Now, thanks to Tovah’s book, I’ve got some new plants in mind. I’m heading up to the big garden center near me this week to see if they have any of the plants Tovah suggests. Like Jasminum polyanthum, a fast-growing and easy vining thing, which I used to own years ago, and want to try again. It will replace the nearly spent red Amaryllis I coaxed into blossom for Christmas. Soon the tiled windowsills in our dining room will be my newly refreshed winter garden. I’ll also get one or two inexpensive plants at the supermarket, maybe a Cyclamen or two, perfect for perking up a grey winter day. I wish you happy winter reading and gardening!
