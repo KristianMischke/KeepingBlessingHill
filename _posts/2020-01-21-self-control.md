@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Self Control"
+date:   2020-01-21 10:00:00 -0400
+categories:
+---
+I've been thinking a lot about self-control these days, thanks to reading 1 Timothy, especially chapters 2 and 3, where Paul uses the word 3 times. This morning as I read Paul’s letter to Titus, I noticed the same word was used 5 times! Some time ago, I wrote an article for *Discipleship Journal* magazine titled, *Help! I did it Again!*, about how to grow in self-control. Here's the opening paragraph:
+
+> My husband and I were sitting at the dining room table with our son and his family, telling stories and jokes. My son told a whopper, and I threw my head back and guffawed loudly. Much too loudly, according to my granddaughter Isabelle, who asked, "But are you calm and in control, Oma?" Because Isabelle is a typical rambunctious five-year-old, she sometimes reacts to circumstances inappropriately, such as throwing a tantrum. Her parents had begun to say to her, "Isabelle, stop. You need to be calm and in control now." Now Isabelle wasn't too sure her Oma was 'calm and in control.'
+
+I realized anew this week that self-control is not only about <u>not doing</u> certain things, but also about <u>doing</u> things that please the Lord Jesus. So I asked the Lord to guide my mind as I thought about what things I ought to be doing now, and what things I need to stop doing. I made two lists. I kept them short so I wouldn't get overwhelmed.  These lists are going to guide me in the weeks to come as I seek to practice self-control. In Paul’s letters to Timothy, he urged him to 'practice', 'persist', 'keep a close watch on yourself'. This means work. It won't be easy. And it's only by the Spirit's enabling and prompting that I can expect any measure of success.  But I am encouraged and excited about the changes that I pray will come. What changes are you hoping and praying for this year? In yourself, your schedule, your relationships? Tell me about them. I’d like to pray for you as I pray for myself.
