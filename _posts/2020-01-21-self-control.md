@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Self Control"
-date:   2020-01-21 10:00:00 -0400
+date:   2021-01-21 10:00:00 -0400
 categories:
 ---
 I've been thinking a lot about self-control these days, thanks to reading 1 Timothy, especially chapters 2 and 3, where Paul uses the word 3 times. This morning as I read Paul’s letter to Titus, I noticed the same word was used 5 times! Some time ago, I wrote an article for *Discipleship Journal* magazine titled, *Help! I did it Again!*, about how to grow in self-control. Here's the opening paragraph:
