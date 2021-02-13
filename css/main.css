@@ -113,6 +113,9 @@ h3 > a:hover {
     color: var(--brand-primary);
 }
 
+.post-img {
+   width: 30%;
+}
 
 /* QUOTES */
 blockquote {
